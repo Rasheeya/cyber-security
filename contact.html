@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Stackly</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .contact-icon-box {
+            width: 50px;
+            height: 50px;
+            background: var(--bg-accent);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            flex-shrink: 0;
+            margin-right: 20px;
+        }
+
+        .form-control, .form-select {
+            background: var(--bg-accent);
+            border: 1px solid var(--glass-border);
+            color: white;
+            padding: 12px 15px;
+        }
+
+        .form-control:focus, .form-select:focus {
+            background: var(--bg-accent);
+            border-color: var(--primary);
+            color: white;
+            box-shadow: 0 0 10px var(--primary-glow);
+        }
+
+        .form-control::placeholder {
+            color: var(--text-dim);
+            opacity: 0.5;
+        }
+
+        .contact-info-item {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.webp" alt="Stackly" style="height: 42px; filter: brightness(0) invert(1) drop-shadow(0 0 5px #00d4ff); mix-blend-mode: screen; transition: all 0.3s ease;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i data-lucide="menu" style="color: white;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="ms-lg-4 mt-3 mt-lg-0">
+                    <a href="login.html" class="btn-cyber-outline btn-sm me-2 py-2 px-3 text-decoration-none">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 text-center mt-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold glow-text">Secure Communications</h1>
+            <p class="text-dim lead">Contact our specialists for an encrypted consultation.</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Info -->
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="contact-info-item d-flex">
+                        <div class="contact-icon-box"><i data-lucide="map-pin"></i></div>
+                        <div>
+                            <h4 class="mb-1">Head Office</h4>
+                            <p class="text-dim">Salem, Tamil Nadu, India - 636001</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item d-flex">
+                        <div class="contact-icon-box"><i data-lucide="mail"></i></div>
+                        <div>
+                            <h4 class="mb-1">Secure Email</h4>
+                            <p class="text-dim">support@stackly.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item d-flex">
+                        <div class="contact-icon-box"><i data-lucide="phone-call"></i></div>
+                        <div>
+                            <h4 class="mb-1">Hotline</h4>
+                            <p class="text-dim">+91 98765 43210 (24/7 Available)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7" data-aos="fade-left">
+                    <form class="glass p-5">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="mb-2 small fw-bold">Full Name</label>
+                                <input type="text" class="form-control" placeholder="Identity name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="mb-2 small fw-bold">Company Email</label>
+                                <input type="email" class="form-control" placeholder="user@company.com" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label class="mb-2 small fw-bold">Security Service Needed</label>
+                                <select class="form-select">
+                                    <option value="">Select Service</option>
+                                    <option>Network Security Audit</option>
+                                    <option>Cloud Protection Deployment</option>
+                                    <option>Incident Response</option>
+                                    <option>Penetration Testing</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label class="mb-2 small fw-bold">Encrypted Message</label>
+                                <textarea class="form-control" rows="4" placeholder="Brief description of requirements..."></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn-cyber w-100 py-3">Submit Encrypted Request</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section py-5">
+        <div class="container">
+            <h2 class="section-title">Find our Location</h2>
+            <div class="glass overflow-hidden" style="box-shadow: 0 0 20px var(--primary-glow);">
+                <iframe src="https://www.google.com/maps?q=salem,tamilnadu&output=embed" width="100%" height="450"
+                    style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <a class="footer-logo text-decoration-none" href="index.html">
+                        <img src="images/logo.webp" alt="Stackly" style="height: 42px; filter: brightness(0) invert(1) drop-shadow(0 0 5px #00d4ff); mix-blend-mode: screen; transition: all 0.3s ease;">
+                    </a>
+                    <p class="text-dim pe-lg-5">Empowering organizations with next-generation cybersecurity framework. Built for developers, trusted by enterprises globally.</p>
+                    <div class="social-links">
+                        <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-5 mb-lg-0 footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">News & Blog</a></li>
+                        <li><a href="#">Security Teams</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-5 mb-lg-0 footer-links">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="services.html">Network Security</a></li>
+                        <li><a href="services.html">Cloud Protection</a></li>
+                        <li><a href="services.html">Incident Response</a></li>
+                        <li><a href="services.html">Security Audit</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 newsletter">
+                    <h4>Newsletter</h4>
+                    <p class="text-dim">Receive the latest cyber threat intelligence directly in your inbox.</p>
+                    <form action="404.html">
+                        <input type="email" placeholder="Email address" required>
+                        <button type="submit" class="btn-cyber btn-sm text-white hover-force-white">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Stackly Technologies Inc. All rights reserved. | <a href="404.html" class="text-dim ms-2">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & Plugins JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        lucide.createIcons();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

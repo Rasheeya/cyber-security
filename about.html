@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Stackly</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .page-header {
+            padding: 120px 0 60px;
+            background: linear-gradient(to bottom, rgba(0, 212, 255, 0.05), transparent);
+            text-align: center;
+        }
+
+        .about-img-box {
+            position: relative;
+            padding: 20px;
+        }
+
+        .about-img-box img {
+            border-radius: 12px;
+            width: 100%;
+            border: 1px solid var(--glass-border);
+            filter: drop-shadow(0 0 20px var(--primary-glow));
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--bg-accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        .team-card {
+            padding: 30px;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+
+        .team-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 2px solid var(--primary);
+            padding: 5px;
+        }
+
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .team-social a {
+            color: var(--text-dim);
+            transition: var(--transition);
+        }
+
+        .team-social a:hover {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Taskbar / Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.webp" alt="Stackly" style="height: 42px; filter: brightness(0) invert(1) drop-shadow(0 0 5px #00d4ff); mix-blend-mode: screen; transition: all 0.3s ease;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i data-lucide="menu" style="color: white;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="ms-lg-4 mt-3 mt-lg-0">
+                    <a href="login.html" class="btn-cyber-outline btn-sm me-2 py-2 px-3 text-decoration-none">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-down" class="glow-text">About Our Mission</h1>
+            <p data-aos="fade-up" class="text-dim">Securing the future of digital infrastructure since 2011.</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-img-box">
+                        <img src="images/about.webp" alt="Cybersecurity Lab">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h2 class="mb-4">Why Choose <span class="text-primary">Stackly</span>?</h2>
+                    <p class="text-dim mb-4">We are a dedicated team of ethical hackers and security specialists focused on protecting our clients' intellectual property and digital presence.</p>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i data-lucide="shield"></i></div>
+                        <div>
+                            <h4>Elite Protection</h4>
+                            <p class="text-dim">Our team uses state-of-the-art encryption standards and threat detection algorithms.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i data-lucide="users"></i></div>
+                        <div>
+                            <h4>Expert Community</h4>
+                            <p class="text-dim">Thousands of cybersecurity experts contribute to our growing threat intelligence database.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i data-lucide="zap"></i></div>
+                        <div>
+                            <h4>Rapid Response</h4>
+                            <p class="text-dim">Our incident response team guarantees a response time of under 30 minutes for critical issues.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Journey Section -->
+            <div class="row align-items-center mt-5 pt-5 border-top border-secondary">
+                <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                    <img src="images/collaboration.webp" alt="Our Team" class="img-fluid rounded border border-secondary shadow-lg">
+                </div>
+                <div class="col-lg-6 pe-lg-5" data-aos="fade-right">
+                    <h2 class="mb-4">Our <span class="text-primary">Genesis</span></h2>
+                    <p class="text-dim mb-3">Founded in 2011, Stackly began as a small group of researchers at Silicon Valley, identifying zero-day vulnerabilities in emerging cloud platforms. Over the decade, we've evolved into a global leader in offensive and defensive security operations.</p>
+                    <p class="text-dim">Today, we protect over $500B in digital assets for Fortune 500 companies, startups, and government agencies. Our philosophy is simple: **Think like an attacker to build an impenetrable defense.**</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="values-section py-5 bg-accent">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our <span class="text-primary">Core Values</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="zoom-in">
+                    <div class="glass p-5 text-center h-100">
+                        <i data-lucide="eye" class="text-primary mb-3" style="width:48px;height:48px;"></i>
+                        <h4>Transparency</h4>
+                        <p class="text-dim">We believe in radical transparency with our clients, providing real-time access to security audits and threat findings.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="glass p-5 text-center h-100">
+                        <i data-lucide="lock" class="text-primary mb-3" style="width:48px;height:48px;"></i>
+                        <h4>Security First</h4>
+                        <p class="text-dim">Security isn't a feature; it's our foundation. We implement security-by-design in every line of code we write.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="glass p-5 text-center h-100">
+                        <i data-lucide="award" class="text-primary mb-3" style="width:48px;height:48px;"></i>
+                        <h4>Excellence</h4>
+                        <p class="text-dim">We never settle for "good enough." Our researchers are constantly pushing the boundaries of cyber defense.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner mt-5 py-5" data-aos="zoom-in">
+        <div class="container text-center py-5 glass">
+            <h2 class="glow-text mb-4">Immediate Security Consultation?</h2>
+            <p class="text-dim mb-4 mx-auto" style="max-width: 600px;">Our rapid response team is standing by to assist with your security landscape analysis.</p>
+            <a href="404.html" class="btn-cyber text-decoration-none px-5 py-3">Schedule Consultation</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <a class="footer-logo text-decoration-none" href="index.html">
+                        <img src="images/logo.webp" alt="Stackly" style="height: 42px; filter: brightness(0) invert(1) drop-shadow(0 0 5px #00d4ff); mix-blend-mode: screen; transition: all 0.3s ease;">
+                    </a>
+                    <p class="text-dim pe-lg-5">Empowering organizations with next-generation cybersecurity framework. Built for developers, trusted by enterprises globally.</p>
+                    <div class="social-links">
+                        <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-5 mb-lg-0 footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">News & Blog</a></li>
+                        <li><a href="#">Security Teams</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-5 mb-lg-0 footer-links">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="services.html">Network Security</a></li>
+                        <li><a href="services.html">Cloud Protection</a></li>
+                        <li><a href="services.html">Incident Response</a></li>
+                        <li><a href="services.html">Security Audit</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 newsletter">
+                    <h4>Newsletter</h4>
+                    <p class="text-dim">Receive the latest cyber threat intelligence directly in your inbox.</p>
+                    <form action="404.html">
+                        <input type="email" placeholder="Email address" required>
+                        <button type="submit" class="btn-cyber btn-sm text-white hover-force-white">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Stackly Technologies Inc. All rights reserved. | <a href="404.html" class="text-dim ms-2">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & Plugins JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        lucide.createIcons();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies | Stackly</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .case-card {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            transition: var(--transition);
+            margin-bottom: 30px;
+        }
+
+        .case-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.15);
+        }
+
+        .case-img-box {
+            position: relative;
+            height: 220px;
+            background: var(--bg-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .case-img-box i {
+            width: 80px;
+            height: 80px;
+            color: var(--primary);
+            opacity: 0.5;
+        }
+
+        .case-content {
+            padding: 25px;
+        }
+
+        .case-badge {
+            font-size: 0.75rem;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            padding: 4px 12px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.webp" alt="Stackly" style="height: 42px; filter: brightness(0) invert(1) drop-shadow(0 0 5px #00d4ff); mix-blend-mode: screen; transition: all 0.3s ease;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i data-lucide="menu" style="color: white;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="case-studies.html">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="ms-lg-4 mt-3 mt-lg-0">
+                    <a href="login.html" class="btn-cyber-outline btn-sm me-2 py-2 px-3 text-decoration-none">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 text-center mt-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold glow-text">Success <span class="text-primary">Stories</span></h1>
+            <p class="text-dim lead">Real-world impact of our cybersecurity audits and defense deployments.</p>
+        </div>
+    </header>
+
+    <section class="case-studies">
+        <div class="container">
+            <div class="row">
+                <!-- Case 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="case-card glass">
+                        <div class="case-img-box">
+                            <img src="images/case-1.webp" alt="Bank Security" class="w-100 h-100" style="object-fit: cover;">
+                        </div>
+                        <div class="case-content">
+                            <span class="case-badge">FINANCIAL SERVICES</span>
+                            <h4 class="mb-3">Bank Security Overhaul</h4>
+                            <p class="text-dim">Implemented multi-factor authentication and threat detection across 500+ branches globally.</p>
+                            <a href="404.html" class="btn-cyber btn-sm mt-3 w-100 text-decoration-none text-center d-block">Read Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="case-card glass">
+                        <div class="case-img-box">
+                            <img src="images/case-2.webp" alt="Zero Trust" class="w-100 h-100" style="object-fit: cover;">
+                        </div>
+                        <div class="case-content">
+                            <span class="case-badge">SAAS ENTERPRISE</span>
+                            <h4 class="mb-3">Zero Trust Migration</h4>
+                            <p class="text-dim">Secured a massive cloud-native application ecosystem with Zero Trust Access protocols.</p>
+                            <a href="404.html" class="btn-cyber btn-sm mt-3 w-100 text-decoration-none text-center d-block">Read Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="case-card glass h-100">
+                        <div class="case-img-box">
+                            <img src="images/case-3.webp" alt="Government Security" class="w-100 h-100" style="object-fit: cover;">
+                        </div>
+                        <div class="case-content">
+                            <span class="case-badge">GOVERNMENT AGENTS</span>
+                            <h4 class="mb-3">Nation-State Resilience</h4>
+                            <p class="text-dim">Hardened national power grid infrastructure against sophisticated Advanced Persistent Threats (APTs).</p>
+                            <a href="404.html" class="btn-cyber btn-sm mt-3 w-100 text-decoration-none text-center d-block">Read Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 4 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="case-card glass h-100">
+                        <div class="case-img-box">
+                            <img src="images/pentesting.webp" alt="Healthcare" class="w-100 h-100" style="object-fit: cover;">
+                        </div>
+                        <div class="case-content">
+                            <span class="case-badge">HEALTHCARE</span>
+                            <h4 class="mb-3">Patient Data Fortification</h4>
+                            <p class="text-dim">Secured 50M+ electronic health records for a major hospital network with HIPAA-compliant encryption.</p>
+                            <a href="404.html" class="btn-cyber btn-sm mt-3 w-100 text-decoration-none text-center d-block">Read Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 5 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="case-card glass h-100">
+                        <div class="case-img-box">
+                            <img src="images/server-room.webp" alt="E-commerce" class="w-100 h-100" style="object-fit: cover;">
+                        </div>
+                        <div class="case-content">
+                            <span class="case-badge">E-COMMERCE</span>
+                            <h4 class="mb-3">Black Friday Load Hardening</h4>
+                            <p class="text-dim">Prevented 12 major DDoS attacks during peak traffic window, ensuring zero downtime for a global retailer.</p>
+                            <a href="404.html" class="btn-cyber btn-sm mt-3 w-100 text-decoration-none text-center d-block">Read Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Metrics Section -->
+    <section class="metrics-section py-5 bg-accent">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2 class="glow-text">Impact by the Numbers</h2>
+                <div class="line mx-auto"></div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in">
+                    <div class="glass p-4">
+                        <h2 class="text-primary mb-1">99%</h2>
+                        <p class="text-dim small mb-0">Threat Detection Rate</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="glass p-4">
+                        <h2 class="text-primary mb-1">15ms</h2>
+                        <p class="text-dim small mb-0">Average Latency Impact</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="glass p-4">
+                        <h2 class="text-primary mb-1">$2B+</h2>
+                        <p class="text-dim small mb-0">Losses Prevented</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="glass p-4">
+                        <h2 class="text-primary mb-1">24/7</h2>
+                        <p class="text-dim small mb-0">Active Defense</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logo Grid -->
+    <section class="logo-grid py-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-center opacity-50">
+                <div class="col-md-2 col-4 mb-4 text-center"><h5 class="m-0 fw-bold">TECHCORP</h5></div>
+                <div class="col-md-2 col-4 mb-4 text-center"><h5 class="m-0 fw-bold">FINBANK</h5></div>
+                <div class="col-md-2 col-4 mb-4 text-center"><h5 class="m-0 fw-bold">GLOBO-CO</h5></div>
+                <div class="col-md-2 col-4 mb-4 text-center"><h5 class="m-0 fw-bold">SECURE-IT</h5></div>
+                <div class="col-md-2 col-4 mb-4 text-center"><h5 class="m-0 fw-bold">NEXUS-G</h5></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner mt-5 py-5" data-aos="zoom-in">
+        <div class="container text-center py-5 glass">
+            <h2 class="glow-text mb-4">Immediate Security Consultation?</h2>
+            <p class="text-dim mb-4 mx-auto" style="max-width: 600px;">Our rapid response team is standing by to assist with your security landscape analysis.</p>
+            <a href="404.html" class="btn-cyber text-decoration-none px-5 py-3">Schedule Consultation</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <a class="footer-logo text-decoration-none" href="index.html">
+                        <img src="images/logo.webp" alt="Stackly" style="height: 42px; filter: brightness(0) invert(1) drop-shadow(0 0 5px #00d4ff); mix-blend-mode: screen; transition: all 0.3s ease;">
+                    </a>
+                    <p class="text-dim pe-lg-5">Empowering organizations with next-generation cybersecurity framework. Built for developers, trusted by enterprises globally.</p>
+                    <div class="social-links">
+                        <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-5 mb-lg-0 footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">News & Blog</a></li>
+                        <li><a href="#">Security Teams</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-5 mb-lg-0 footer-links">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="services.html">Network Security</a></li>
+                        <li><a href="services.html">Cloud Protection</a></li>
+                        <li><a href="services.html">Incident Response</a></li>
+                        <li><a href="services.html">Security Audit</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 newsletter">
+                    <h4>Newsletter</h4>
+                    <p class="text-dim">Receive the latest cyber threat intelligence directly in your inbox.</p>
+                    <form action="404.html">
+                        <input type="email" placeholder="Email address" required>
+                        <button type="submit" class="btn-cyber btn-sm text-white hover-force-white">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Stackly Technologies Inc. All rights reserved. | <a href="404.html" class="text-dim ms-2">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & Plugins JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        lucide.createIcons();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

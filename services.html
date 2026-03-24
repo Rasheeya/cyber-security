@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Stackly</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.webp" alt="Stackly" style="height: 42px; filter: brightness(0) invert(1) drop-shadow(0 0 5px #00d4ff); mix-blend-mode: screen; transition: all 0.3s ease;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i data-lucide="menu" style="color: white;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="ms-lg-4 mt-3 mt-lg-0">
+                    <a href="login.html" class="btn-cyber-outline btn-sm me-2 py-2 px-3 text-decoration-none">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 text-center mt-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold glow-text" data-aos="fade-down">Innovative Security Solutions</h1>
+            <p class="text-dim lead" data-aos="fade-up">Defending your organization with precision and persistence.</p>
+        </div>
+    </header>
+
+    <section class="services-list">
+        <div class="container">
+            <!-- Network Security -->
+            <div class="row align-items-center mb-5" data-aos="fade-up">
+                <div class="col-lg-5 order-lg-2">
+                    <img src="images/data-security.webp" alt="Network" class="img-fluid rounded mb-4" style="filter: drop-shadow(0 0 15px var(--primary-glow))">
+                </div>
+                <div class="col-lg-7 px-lg-5">
+                    <h2 class="text-primary mb-3">01. Network Security</h2>
+                    <p class="text-dim lead">Our network security protocols go beyond simple firewalls. We implement Zero Trust Architecture (ZTA) to ensure every request is verified, regardless of origin.</p>
+                    <ul class="list-unstyled text-dim">
+                        <li class="mb-2"><i data-lucide="check" class="text-primary me-2" style="width:16px;"></i> Next-Gen Firewalls (NGFW)</li>
+                        <li class="mb-2"><i data-lucide="check" class="text-primary me-2" style="width:16px;"></i> Deep Packet Inspection</li>
+                        <li class="mb-2"><i data-lucide="check" class="text-primary me-2" style="width:16px;"></i> Intrusion Prevention Systems (IPS)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Cloud Security -->
+            <div class="row align-items-center mb-5" data-aos="fade-up">
+                <div class="col-lg-5">
+                    <img src="images/case-2.webp" alt="Cloud" class="img-fluid rounded mb-4" style="filter: drop-shadow(0 0 15px var(--primary-glow))">
+                </div>
+                <div class="col-lg-7 px-lg-5">
+                    <h2 class="text-primary mb-3">02. Cloud Defense</h2>
+                    <p class="text-dim lead">Multi-cloud and hybrid environments require specialized protection. We secure your AWS, Azure, and Google Cloud workloads with continuous monitoring.</p>
+                    <ul class="list-unstyled text-dim">
+                        <li class="mb-2"><i data-lucide="check" class="text-primary me-2" style="width:16px;"></i> Serverless Security</li>
+                        <li class="mb-2"><i data-lucide="check" class="text-primary me-2" style="width:16px;"></i> IAM Configuration Audits</li>
+                        <li class="mb-2"><i data-lucide="check" class="text-primary me-2" style="width:16px;"></i> Container Security (Kubernetes)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pentesting -->
+            <div class="row align-items-center mb-5" data-aos="fade-up">
+                <div class="col-lg-5 order-lg-2">
+                    <img src="images/pentesting.webp" alt="Pentesting" class="img-fluid rounded mb-4" style="filter: drop-shadow(0 0 15px var(--primary-glow))">
+                </div>
+                <div class="col-lg-7 px-lg-5">
+                    <h2 class="text-primary mb-3">03. Offensive Pentesting</h2>
+                    <p class="text-dim lead">We simulate real-world attacks to identify vulnerabilities before malicious actors do. Our ethical hackers use advanced exploit kits and social engineering tactics.</p>
+                    <ul class="list-unstyled text-dim">
+                        <li class="mb-2"><i data-lucide="check" class="text-primary me-2" style="width:16px;"></i> Web Application Testing</li>
+                        <li class="mb-2"><i data-lucide="check" class="text-primary me-2" style="width:16px;"></i> Red Team Operations</li>
+                        <li class="mb-2"><i data-lucide="check" class="text-primary me-2" style="width:16px;"></i> IoT and Hardware Hacking</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Incident Response -->
+            <div class="row align-items-center mb-5" data-aos="fade-up">
+                <div class="col-lg-5">
+                    <img src="images/server-room.webp" alt="Server Room" class="img-fluid rounded mb-4" style="filter: drop-shadow(0 0 15px var(--primary-glow))">
+                </div>
+                <div class="col-lg-7 px-lg-5">
+                    <h2 class="text-primary mb-3">04. Incident Response</h2>
+                    <p class="text-dim lead">When a breach occurs, every second counts. Our rapid response team is available 24/7/365 to contain threats and restore operations.</p>
+                    <ul class="list-unstyled text-dim">
+                        <li class="mb-2"><i data-lucide="check" class="text-primary me-2" style="width:16px;"></i> 30-Minute SLA Response</li>
+                        <li class="mb-2"><i data-lucide="check" class="text-primary me-2" style="width:16px;"></i> Digital Forensics</li>
+                        <li class="mb-2"><i data-lucide="check" class="text-primary me-2" style="width:16px;"></i> Crisis Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="methodology-section py-5 bg-accent">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2 class="glow-text">Our Security Methodology</h2>
+                <div class="line mx-auto"></div>
+                <p class="text-dim mt-3">A systematic approach to fortifying your digital empire.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-4" data-aos="fade-up">
+                    <div class="text-center">
+                        <div class="mb-3 text-primary"><i data-lucide="search" style="width:40px;height:40px;"></i></div>
+                        <h5>01. Reconnaissance</h5>
+                        <p class="small text-dim">Identifying assets and surface area vulnerabilities through comprehensive scanning.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center">
+                        <div class="mb-3 text-primary"><i data-lucide="shield-alert" style="width:40px;height:40px;"></i></div>
+                        <h5>02. Threat Modeling</h5>
+                        <p class="small text-dim">Mapping potential attack vectors and prioritizing risks based on business impact.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center">
+                        <div class="mb-3 text-primary"><i data-lucide="activity" style="width:40px;height:40px;"></i></div>
+                        <h5>03. Active Defense</h5>
+                        <p class="small text-dim">Implementing multi-layered controls and real-time monitoring solutions.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center">
+                        <div class="mb-3 text-primary"><i data-lucide="refresh-ccw" style="width:40px;height:40px;"></i></div>
+                        <h5>04. Continuous Audit</h5>
+                        <p class="small text-dim">Iterative testing and refinement to stay ahead of evolving cyber threats.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner mt-5 py-5" data-aos="zoom-in">
+        <div class="container text-center py-5 glass">
+            <h2 class="glow-text mb-4">Immediate Security Consultation?</h2>
+            <p class="text-dim mb-4 mx-auto" style="max-width: 600px;">Our rapid response team is standing by to assist with your security landscape analysis.</p>
+            <a href="404.html" class="btn-cyber text-decoration-none px-5 py-3">Schedule Consultation</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <a class="footer-logo text-decoration-none" href="index.html">
+                        <img src="images/logo.webp" alt="Stackly" style="height: 42px; filter: brightness(0) invert(1) drop-shadow(0 0 5px #00d4ff); mix-blend-mode: screen; transition: all 0.3s ease;">
+                    </a>
+                    <p class="text-dim pe-lg-5">Empowering organizations with next-generation cybersecurity framework. Built for developers, trusted by enterprises globally.</p>
+                    <div class="social-links">
+                        <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-5 mb-lg-0 footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">News & Blog</a></li>
+                        <li><a href="#">Security Teams</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-5 mb-lg-0 footer-links">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="services.html">Network Security</a></li>
+                        <li><a href="services.html">Cloud Protection</a></li>
+                        <li><a href="services.html">Incident Response</a></li>
+                        <li><a href="services.html">Security Audit</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 newsletter">
+                    <h4>Newsletter</h4>
+                    <p class="text-dim">Receive the latest cyber threat intelligence directly in your inbox.</p>
+                    <form action="404.html">
+                        <input type="email" placeholder="Email address" required>
+                        <button type="submit" class="btn-cyber btn-sm text-white hover-force-white">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy;  2026 Stackly Technologies Inc. All rights reserved. | <a href="404.html" class="text-dim ms-2">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & Plugins JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        lucide.createIcons();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
