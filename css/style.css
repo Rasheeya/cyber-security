@@ -324,19 +324,48 @@ footer {
   padding-left: 5px;
 }
 
-.newsletter form {
+.newsletter form, .footer-newsletter form {
   display: flex;
   gap: 10px;
   margin-top: 20px;
 }
 
-.newsletter input {
+.newsletter input, .footer-newsletter input {
   background: var(--bg-accent);
   border: 1px solid var(--glass-border);
   color: white;
   padding: 10px 15px;
   border-radius: 4px;
   flex-grow: 1;
+}
+
+/* Sidebar newsletter: stacked layout */
+.sidebar-widget.newsletter form {
+  flex-direction: column;
+  gap: 0;
+}
+
+.sidebar-widget.newsletter .form-control {
+  margin-bottom: 0.5rem;
+}
+
+/* Inline email error label */
+.email-error-label {
+  color: var(--accent) !important;
+  font-size: 0.78rem !important;
+  margin-top: 4px !important;
+  margin-bottom: 8px !important;
+  display: none;
+}
+
+/* Spinner for loading state */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.spin {
+  animation: spin 0.9s linear infinite;
+  display: inline-block;
 }
 
 .social-links {
@@ -445,10 +474,10 @@ footer {
     .social-links {
         justify-content: center;
     }
-    .newsletter form {
+    .newsletter form, .footer-newsletter form {
         flex-direction: column;
     }
-    .newsletter button {
+    .newsletter button, .footer-newsletter button {
         width: 100%;
         margin-top: 10px;
     }

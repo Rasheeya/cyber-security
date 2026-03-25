@@ -167,8 +167,11 @@
                 <div class="sidebar-widget glass">
                     <h4 class="mb-3">Newsletter</h4>
                     <p class="text-dim small">Get critical threat intelligence delivered directly to your inbox every Monday.</p>
-                    <input type="email" class="form-control mb-3" placeholder="Enter work email">
-                    <a href="404.html" class="btn btn-cyber text-decoration-none w-100">Subscribe Intel</a>
+                    <form id="sidebarNewsletterForm" novalidate>
+                        <input type="email" id="sidebarEmailInput" class="form-control mb-1" placeholder="Enter work email">
+                        <label id="sidebarEmailError" class="email-error-label" style="display:none; color: #e94560; font-size: 0.78rem; margin-bottom: 8px; display: none;"></label>
+                        <button type="submit" class="btn btn-cyber text-decoration-none w-100 mt-2">Subscribe Intel</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -216,7 +219,7 @@
                         <li><a href="services.html">Security Audit</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-4 newsletter">
+                <div class="col-lg-4 col-md-4 footer-newsletter">
                     <h4>Newsletter</h4>
                     <p class="text-dim">Receive the latest cyber threat intelligence directly in your inbox.</p>
                     <form action="404.html">
@@ -239,6 +242,44 @@
         lucide.createIcons();
     </script>
     <script src="js/main.js"></script>
+    <script>
+        // Sidebar Newsletter - Self-contained handler
+        (function() {
+            var form = document.getElementById('sidebarNewsletterForm');
+            if (!form) return;
+            var input = document.getElementById('sidebarEmailInput');
+            var errorLabel = document.getElementById('sidebarEmailError');
+
+            input.addEventListener('input', function() {
+                input.style.borderColor = '';
+                input.style.boxShadow = '';
+                errorLabel.style.display = 'none';
+            });
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                var email = input.value.trim();
+
+                if (!email) {
+                    input.style.borderColor = 'rgba(233, 69, 96, 0.8)';
+                    input.style.boxShadow = '0 0 10px rgba(233, 69, 96, 0.2)';
+                    errorLabel.textContent = 'Warning: Email address is required.';
+                    errorLabel.style.display = 'block';
+                    return;
+                }
+                if (!email.includes('@') || !email.includes('.')) {
+                    input.style.borderColor = 'rgba(233, 69, 96, 0.8)';
+                    input.style.boxShadow = '0 0 10px rgba(233, 69, 96, 0.2)';
+                    errorLabel.textContent = 'Warning: Please enter a valid email address.';
+                    errorLabel.style.display = 'block';
+                    return;
+                }
+
+                // Valid email — redirect to 404.html
+                window.location.href = '404.html';
+            });
+        })();
+    </script>
 </body>
 </html>
 

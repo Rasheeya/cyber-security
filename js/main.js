@@ -127,11 +127,27 @@ const handleNewsletter = (e) => {
     const form = e.target;
     const input = form.querySelector('input[type="email"]');
     const email = input.value.trim();
+    
+    let errorLabel = form.querySelector('.email-error-label');
+    if (!errorLabel) {
+        errorLabel = document.createElement('label');
+        errorLabel.className = 'email-error-label small text-accent w-100 mb-2 mt-n2';
+        errorLabel.style.display = 'none';
+        input.parentNode.insertBefore(errorLabel, input.nextSibling);
+    }
 
     if (!email || !email.includes('@')) {
-        showNotification('Invalid email address provided.', 'error');
+        input.style.borderColor = 'rgba(233, 69, 96, 0.8)';
+        input.style.boxShadow = '0 0 10px rgba(233, 69, 96, 0.2)';
+        errorLabel.innerText = !email ? "Warning: Email address is required." : "Warning: Please enter a valid email address.";
+        errorLabel.style.display = 'block';
         return;
     }
+    
+    // Clear any previous error styling
+    input.style.borderColor = '';
+    input.style.boxShadow = '';
+    errorLabel.style.display = 'none';
 
     // Mock API call
     const btn = form.querySelector('button');
@@ -146,13 +162,21 @@ const handleNewsletter = (e) => {
         btn.disabled = false;
         btn.innerHTML = originalText;
         
-        // Redirect to 404 page as requested
+        // Immediate redirect as requested by user
         window.location.href = '404.html';
-    }, 1500);
+    }, 1000);
 };
 
 document.querySelectorAll('.newsletter form').forEach(form => {
+    form.setAttribute('novalidate', 'true');
     form.addEventListener('submit', handleNewsletter);
+    const input = form.querySelector('input[type="email"]');
+    if (input) {
+        input.addEventListener('input', () => {
+            input.style.borderColor = '';
+            input.style.boxShadow = '';
+        });
+    }
 });
 
 // Contact Form Handling
