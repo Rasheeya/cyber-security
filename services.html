@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
+<body id="top">
     <nav class="navbar navbar-expand-lg sticky-top scrolled">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="images/logo.webp" alt="Stackly" style="height: 42px; filter: brightness(0) invert(1) drop-shadow(0 0 5px #00d4ff); mix-blend-mode: screen; transition: all 0.3s ease;"></a>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.webp" alt="Stackly Cybersecurity Solutions Logo" style="height: 42px; filter: brightness(0) invert(1) drop-shadow(0 0 5px #00d4ff); mix-blend-mode: screen; transition: all 0.3s ease;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <i data-lucide="menu" style="color: white;"></i>
             </button>
@@ -44,9 +44,9 @@
     <section class="services-list">
         <div class="container">
             <!-- Network Security -->
-            <div class="row align-items-center mb-5" data-aos="fade-up">
+            <div id="network-security" class="row align-items-center mb-5" data-aos="fade-up">
                 <div class="col-lg-5 order-lg-2">
-                    <img src="images/data-security.webp" alt="Network" class="img-fluid rounded mb-4" style="filter: drop-shadow(0 0 15px var(--primary-glow))">
+                    <img src="images/data-security.webp" alt="Secure Network Infrastructure Visualization" class="img-fluid rounded mb-4" style="filter: drop-shadow(0 0 15px var(--primary-glow))">
                 </div>
                 <div class="col-lg-7 px-lg-5">
                     <h2 class="text-primary mb-3">01. Network Security</h2>
@@ -60,9 +60,9 @@
             </div>
 
             <!-- Cloud Security -->
-            <div class="row align-items-center mb-5" data-aos="fade-up">
+            <div id="cloud-security" class="row align-items-center mb-5" data-aos="fade-up">
                 <div class="col-lg-5">
-                    <img src="images/case-2.webp" alt="Cloud" class="img-fluid rounded mb-4" style="filter: drop-shadow(0 0 15px var(--primary-glow))">
+                    <img src="images/case-2.webp" alt="Scalable Cloud Defense Systems" class="img-fluid rounded mb-4" style="filter: drop-shadow(0 0 15px var(--primary-glow))">
                 </div>
                 <div class="col-lg-7 px-lg-5">
                     <h2 class="text-primary mb-3">02. Cloud Defense</h2>
@@ -76,9 +76,9 @@
             </div>
 
             <!-- Pentesting -->
-            <div class="row align-items-center mb-5" data-aos="fade-up">
+            <div id="pentesting" class="row align-items-center mb-5" data-aos="fade-up">
                 <div class="col-lg-5 order-lg-2">
-                    <img src="images/pentesting.webp" alt="Pentesting" class="img-fluid rounded mb-4" style="filter: drop-shadow(0 0 15px var(--primary-glow))">
+                    <img src="images/pentesting.webp" alt="Ethical Hacking and Vulnerability Assessment" class="img-fluid rounded mb-4" style="filter: drop-shadow(0 0 15px var(--primary-glow))">
                 </div>
                 <div class="col-lg-7 px-lg-5">
                     <h2 class="text-primary mb-3">03. Offensive Pentesting</h2>
@@ -92,9 +92,9 @@
             </div>
 
             <!-- Incident Response -->
-            <div class="row align-items-center mb-5" data-aos="fade-up">
+            <div id="incident-response" class="row align-items-center mb-5" data-aos="fade-up">
                 <div class="col-lg-5">
-                    <img src="images/server-room.webp" alt="Server Room" class="img-fluid rounded mb-4" style="filter: drop-shadow(0 0 15px var(--primary-glow))">
+                    <img src="images/server-room.webp" alt="Secure Server Environment for Incident Response" class="img-fluid rounded mb-4" style="filter: drop-shadow(0 0 15px var(--primary-glow))">
                 </div>
                 <div class="col-lg-7 px-lg-5">
                     <h2 class="text-primary mb-3">04. Incident Response</h2>
@@ -164,14 +164,14 @@
             <div class="row">
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <a class="footer-logo text-decoration-none" href="index.html">
-                        <img src="images/logo.webp" alt="Stackly" style="height: 42px; filter: brightness(0) invert(1) drop-shadow(0 0 5px #00d4ff); mix-blend-mode: screen; transition: all 0.3s ease;">
+                        <img src="images/logo.webp" alt="Stackly Cybersecurity Solutions Logo" style="height: 42px; filter: brightness(0) invert(1) drop-shadow(0 0 5px #00d4ff); mix-blend-mode: screen; transition: all 0.3s ease;">
                     </a>
                     <p class="text-dim pe-lg-5">Empowering organizations with next-generation cybersecurity framework. Built for developers, trusted by enterprises globally.</p>
                     <div class="social-links">
-                        <a href="javascript:void(0)" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="javascript:void(0)" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="javascript:void(0)" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                        <a href="javascript:void(0)" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#top" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#top" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#top" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#top" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 mb-5 mb-lg-0 footer-links">
@@ -179,8 +179,8 @@
                     <ul>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="blog.html">News & Blog</a></li>
-                        <li><a href="#">Security Teams</a></li>
-                        <li><a href="#">Compliance</a></li>
+                        <li><a href="javascript:void(0)">Security Teams</a></li>
+                        <li><a href="javascript:void(0)">Compliance</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-4 mb-5 mb-lg-0 footer-links">

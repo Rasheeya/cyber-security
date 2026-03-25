@@ -38,6 +38,14 @@ h1, h2, h3, h4, .cyber-font {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
   border-radius: 12px;
+  transition: var(--transition);
+}
+
+.glass-hover:hover {
+  border-color: var(--primary);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px var(--primary-glow);
+  background: rgba(22, 33, 62, 0.6);
 }
 
 /* Scrollbar Customization */
@@ -127,6 +135,11 @@ h1, h2, h3, h4, .cyber-font {
 .btn-cyber:hover {
   color: var(--bg-dark);
   box-shadow: 0 0 20px var(--primary-glow);
+  transform: translateY(-2px);
+}
+.btn-cyber:active {
+  transform: translateY(0);
+  box-shadow: 0 0 10px var(--primary-glow);
 }
 .btn-cyber:hover::before {
   transform: translate(-50%, -50%) scale(1);
@@ -144,6 +157,34 @@ h1, h2, h3, h4, .cyber-font {
 .btn-cyber-outline:hover {
   border-color: var(--primary);
   color: var(--primary);
+  background: rgba(0, 212, 255, 0.05);
+  box-shadow: 0 0 15px var(--primary-glow);
+}
+.btn-cyber-outline:active {
+  transform: scale(0.98);
+}
+
+/* Auth Boxes */
+.login-box, .signup-box {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(15px);
+  border-radius: 14px;
+}
+
+.auth-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-dark);
+  font-family: var(--font-main);
+  color: white;
+  padding: 20px;
 }
 
 @media (max-width: 991px) {
@@ -175,10 +216,10 @@ h1, h2, h3, h4, .cyber-font {
 }
 
 .form-select {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%2300d4ff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
-  background-position: right 0.75rem center !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%2300d4ff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+  background-position: right 1rem center !important;
   background-repeat: no-repeat !important;
-  background-size: 16px 12px !important;
+  background-size: 18px 14px !important;
 }
 
 .form-control::placeholder {
@@ -189,7 +230,8 @@ h1, h2, h3, h4, .cyber-font {
 
 /* Sections */
 section {
-  padding: 80px 0;
+  padding: 100px 0;
+  position: relative;
 }
 .section-title {
   text-align: center;
@@ -360,6 +402,13 @@ footer {
     }
     .nav-link::after {
         display: none;
+    }
+    .navbar-toggler {
+        border: 1px solid var(--glass-border);
+        padding: 5px 10px;
+    }
+    .hero {
+        padding-top: 120px !important;
     }
 }
 
